@@ -19,7 +19,7 @@ return (
                     <h2 className="text-xl text-gray-700 font-medium">{tes.name}</h2>
                     <p className="text-gray-500 mb-4 text-sm">{tes.title}</p>
                     <div className="flex justify-center gap-1 text-red-500 mb-4">
-                        {Array.from({length:tes.rating}, (items,idx)=>(
+                        {Array.from({length:tes.rating}, (_items,idx)=>(
                             <img key={idx} src={assets.star_icon} alt="stars" />
                         ))}
                     </div>
